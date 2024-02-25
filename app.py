@@ -1,13 +1,23 @@
 Lugar_caminar = "Farallones del Citara"
-Num_caminantes = 15
+Num_caminantes = 5
 num_kms = 25.8
 nivel_dificultad = 4.8
 valor = 490000
+valor_alquiler_equipo = 100000
 print(Lugar_caminar)
-print(Num_caminantes, " Personas")
-print(num_kms, "Kms ")
-print(nivel_dificultad, "Muy Exigente, aptas para personas expertas")
-print(valor, "Pesos")
+print("Cupo para", Num_caminantes, "Personas")
+print("Caminaremos", num_kms, "Kms ")
+print("Nivel:", nivel_dificultad, "Muy Exigente, aptas para personas expertas")
+print("Valor caminata: ", valor, "Pesos")
+print("Valor alquiler equipo: ", valor_alquiler_equipo, "Pesos")
+print()
+
+Alquiler_equipo = input("Selecciona si requiere alquiler de equipo con nosotros: ")
+if Alquiler_equipo=="si":
+    print("El valor total a pagar es:", valor+valor_alquiler_equipo)
+else:
+    print("El valor total a pagar es", valor)
+
 print()
 
 for _ in range(5):
